@@ -9,5 +9,33 @@
   This will build a docker image containing a X window environment in which I run Descent 1 demo <br />
   The gist of Dockerfile is  located at <a href="https://gist.github.com/Nicbogdan/732d36c24a7d53da661afe2dc8913da4" target="_new">here</a> <br />
   Video demo will be added soon. <br />
+  To run the container follow the steps below: <br />
+  <ol>
+     <li>  Git clone https://github.com/Nicbogdan/dbuild1.git </li><br />
+     <li>  Unzip locally d1x-rebirth.zip</li><br />
+     <li>  Run from terminal  docker -t d1xdemo . </li><br />
+     <li>  Run from terminal  docker run  -p 6080:6080 -p 42424:42424 --name d1xgame d1xdemo </li><br />
+  </ol>
+  To stop container :<br />
+  <ul>
+    <li>  Run from terminal  docker stop d1xgame</li><br />
+  </ul>
+  To start again :<br />
+  <ul>
+    <li>  Run from terminal  docker start d1xgame</li><br />
+  </ul>
+  To delete the container : <br />
+  <ul>
+    <li>  Run from terminal  docker rm d1xgame</li><br />
+  </ul>
+  If you want to delete the image : <br />
+  <ul>
+    <li>  Run from terminal  docker rmi -f d1xdemo </li><br />
+  </ul>
+  To recreate the container and the image run : <br />
+  <ul>
+     <li>  Run from terminal  docker run  -p 6080:6080 -p 42424:42424 --name d1xgame d1xdemo </li><br />
+  </ul>
+  Video demos coming soon.
 </body>
 </html>
