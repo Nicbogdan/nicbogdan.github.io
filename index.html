@@ -7,6 +7,7 @@
 <h2>My projects</h2>
 <h3>Build and run container d1xdemo</h3>
   This will build a docker image containing a X window environment in which I run Descent 1 demo <br />
+  The game can be run very similarly like on pc, the advandage here is that you can interact with the game from the browser. <br />
   The gist of Dockerfile is  located at <a href="https://gist.github.com/Nicbogdan/732d36c24a7d53da661afe2dc8913da4" target="_new">here</a> <br />
   To run the container follow the steps below: <br />
   <ol>
@@ -35,6 +36,9 @@
   <ul>
      <li>  Run from terminal  <code>docker run  -p 6080:6080 -p 42424:42424 --name d1xgame d1xdemo </code></li><br />
   </ul>
+  After this in terminal it shows a vnc link. <br />
+  Open the link in a browser and you will get a graphical interface inside the container, that has a terminal running.
+  From that terminal run <code> ./d1x-rebirth </code>  and the game starts. 
   Video demos coming soon.
 </body>
 </html>
